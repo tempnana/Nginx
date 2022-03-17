@@ -10,7 +10,7 @@ cd ~
 git clone https://github.com/FRiCKLE/ngx_cache_purge
 git clone https://github.com/yaoweibin/ngx_http_substitutions_filter_module
 git clone https://github.com/openresty/headers-more-nginx-module
-git clone https://github.com/yaoweibin/ngx_http_substitutions_filter_module
+git clone https://github.com/yaoweibin/nginx_upstream_check_module
 #wget https://ftp.pcre.org/pub/pcre/pcre-8.43.tar.gz && tar xzvf pcre-8.43.tar.gz
 wget https://github.com/tempnana/Nginx/raw/main/pcre-8.45.tar.gz && tar xzvf pcre-8.45.tar.gz
 wget https://www.zlib.net/zlib-1.2.11.tar.gz && tar xzvf zlib-1.2.11.tar.gz

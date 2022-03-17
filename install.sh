@@ -7,15 +7,15 @@ apt-get install build-essential libpcre3 libpcre3-dev libssl-dev git zlib1g-dev 
 adduser --system --home /nonexistent --shell /bin/false --no-create-home --gecos "nginx user" --group --disabled-login --disabled-password nginx
 cd ~ 
 #get module files and nginx source
-git clone git://github.com/FRiCKLE/ngx_cache_purge.git
-git clone git://github.com/yaoweibin/ngx_http_substitutions_filter_module
-git clone git://github.com/openresty/headers-more-nginx-module.git
-wget https://github.com/yaoweibin/nginx_upstream_check_module/archive/refs/heads/master.zip && unzip master.zip
+git clone https://github.com/FRiCKLE/ngx_cache_purge
+git clone https://github.com/yaoweibin/ngx_http_substitutions_filter_module
+git clone https://github.com/openresty/headers-more-nginx-module
+git clone https://github.com/yaoweibin/ngx_http_substitutions_filter_module
 #wget https://ftp.pcre.org/pub/pcre/pcre-8.43.tar.gz && tar xzvf pcre-8.43.tar.gz
 wget https://github.com/tempnana/Nginx/raw/main/pcre-8.45.tar.gz && tar xzvf pcre-8.45.tar.gz
 wget https://www.zlib.net/zlib-1.2.11.tar.gz && tar xzvf zlib-1.2.11.tar.gz
 wget https://www.openssl.org/source/openssl-1.1.1d.tar.gz && tar xzvf openssl-1.1.1d.tar.gz
-wget http://nginx.org/download/nginx-1.20.1.tar.gz && tar zxvf nginx-1.20.1.tar.gz
+wget https://nginx.org/download/nginx-1.20.1.tar.gz && tar zxvf nginx-1.20.1.tar.gz
 #mkdir
 mkdir /var/log/nginx -p
 mkdir /var/cache/nginx -p

@@ -19,9 +19,6 @@ wget https://github.com/openssl/openssl/archive/refs/tags/openssl-3.0.2.zip && u
 sleep 20s
 #mkdir
 mkdir -p /usr/lib/nginx/modules /var/log/nginx /var/cache/nginx /etc/nginx/vhost /etc/nginx/html
-# mkdir /var/cache/nginx -p
-# mkdir /etc/nginx/vhost -p
-# mkdir /etc/nginx/html -p
 cd nginx-1.20.1
 #make install
 patch -p1 <  ../nginx_upstream_check_module/check_1.20.1+.patch

@@ -1,6 +1,6 @@
 #!/bin/bash
 #update
-apt update && apt upgrade -y
+apt-get update && apt-get upgrade -y
 #install tools
 apt-get install build-essential libpcre3 libpcre3-dev libssl-dev git zlib1g-dev net-tools zip unzip -y
 #adduser
@@ -56,7 +56,7 @@ systemctl start nginx.service
 systemctl status nginx.service
 #ufw
 echo "Install ufw..."
-apt install ufw -y
+apt-get install ufw -y
 #Default set: deny all IN and allow all OUT
 ufw default deny incoming
 ufw default allow outgoing

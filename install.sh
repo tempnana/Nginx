@@ -15,7 +15,8 @@ git clone https://github.com/yaoweibin/nginx_upstream_check_module
 wget https://github.com/tempnana/Nginx/raw/main/pcre-8.45.tar.gz && tar xzvf pcre-8.45.tar.gz
 wget https://www.zlib.net/zlib-1.2.11.tar.gz && tar xzvf zlib-1.2.11.tar.gz
 wget https://nginx.org/download/nginx-1.20.1.tar.gz && tar zxvf nginx-1.20.1.tar.gz
-wget https://www.openssl.org/source/openssl-1.1.1d.tar.gz && tar xzvf openssl-1.1.1d.tar.gz
+#wget https://www.openssl.org/source/openssl-1.1.1d.tar.gz && tar xzvf openssl-1.1.1d.tar.gz
+wget https://www.openssl.org/source/openssl-1.1.1o.tar.gz && tar xzvf openssl-1.1.1o.tar.gz
 #mkdir
 mkdir -p /usr/lib/nginx/modules /var/log/nginx /var/cache/nginx /etc/nginx/vhost /etc/nginx/html
 cd nginx-1.20.1

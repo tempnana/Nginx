@@ -2,7 +2,7 @@
 #update
 apt-get update && apt-get upgrade -y
 #install tools
-apt-get install build-essential libpcre3 libpcre3-dev libssl-dev git zlib1g-dev net-tools zip unzip -y
+apt-get install curl wget net-tools iftop build-essential libpcre3 libpcre3-dev libssl-dev git zlib1g-dev zip unzip -y
 #adduser
 adduser --system --home /nonexistent --shell /bin/false --no-create-home --gecos "nginx user" --group --disabled-login --disabled-password nginx
 cd ~ 

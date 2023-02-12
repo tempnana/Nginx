@@ -9,6 +9,9 @@ git clone https://github.com/openresty/sregex
 cd sregex
 sleep 2s
 make && make install
+sleep 2s
+\cp libsregex.so /usr/local/lib/
+\cp libsregex.so.0 /usr/local/lib/
 #get module files and nginx source
 cd
 git clone https://github.com/FRiCKLE/ngx_cache_purge

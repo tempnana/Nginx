@@ -5,7 +5,6 @@ apt-get update && apt-get upgrade -y
 apt-get install curl wget net-tools iftop build-essential libpcre3 libpcre3-dev libssl-dev git zlib1g-dev zip unzip -y
 #adduser
 adduser --system --home /nonexistent --shell /bin/false --no-create-home --gecos "nginx user" --group --disabled-login --disabled-password nginx
-#install sregex to support replace-filter-nginx-module
 git clone https://github.com/openresty/sregex
 cd sregex
 make && make install
@@ -80,4 +79,4 @@ echo '#/etc/init.d/cron restart' >> /var/spool/cron/crontabs/root && /etc/init.d
 service nginx restart
 netstat -nltp
 mv /etc/cloud/templates/hosts.debian.tmpl /etc/cloud/templates/111.hosts.debian.tmpl
-rm -rf *
+#rm -rf *

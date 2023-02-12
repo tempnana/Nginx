@@ -81,4 +81,4 @@ echo '#/etc/init.d/cron restart' >> /var/spool/cron/crontabs/root && /etc/init.d
 service nginx restart
 netstat -nltp
 mv /etc/cloud/templates/hosts.debian.tmpl /etc/cloud/templates/111.hosts.debian.tmpl
-#rm -rf *
+rm -rf *

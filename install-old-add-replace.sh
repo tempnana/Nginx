@@ -45,6 +45,6 @@ sleep 2s
 make
 sleep 2s
 make install
-ls
+nginx -V
 service nginx restart
 netstat -nltp

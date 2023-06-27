@@ -19,22 +19,22 @@ wget https://github.com/tempnana/Nginx/raw/main/zlib-1.2.12.tar.gz && tar xzvf z
 wget https://nginx.org/download/nginx-1.20.1.tar.gz && tar zxvf nginx-1.20.1.tar.gz
 #wget https://www.openssl.org/source/openssl-1.1.1d.tar.gz && tar xzvf openssl-1.1.1d.tar.gz
 wget https://www.openssl.org/source/openssl-1.1.1o.tar.gz && tar xzvf openssl-1.1.1o.tar.gz
-#replace-filter-nginx-module
-git clone https://github.com/openresty/sregex
-git clone https://github.com/openresty/replace-filter-nginx-module
-#make install sregex
-cd /root/nginx/sregex
-echo 'Waiting make install sregex...'
-make
-sleep 5s
-make install
-if [ ! -f "libsregex.so.0" ];then
-  echo "No libsregex.so.0 file"
-  exit
-fi
-ls
-#ldd $(which /usr/sbin/nginx)
-cp /root/nginx/sregex/libsregex.so.0 /lib/x86_64-linux-gnu/
+# #replace-filter-nginx-module
+# git clone https://github.com/openresty/sregex
+# git clone https://github.com/openresty/replace-filter-nginx-module
+# #make install sregex
+# cd /root/nginx/sregex
+# echo 'Waiting make install sregex...'
+# make
+# sleep 5s
+# make install
+# if [ ! -f "libsregex.so.0" ];then
+#   echo "No libsregex.so.0 file"
+#   exit
+# fi
+# ls
+# #ldd $(which /usr/sbin/nginx)
+# cp /root/nginx/sregex/libsregex.so.0 /lib/x86_64-linux-gnu/
 #mkdir
 mkdir -p /usr/lib/nginx/modules /var/log/nginx /var/cache/nginx /etc/nginx/vhost /etc/nginx/html
 cd /root/nginx/nginx-1.20.1
